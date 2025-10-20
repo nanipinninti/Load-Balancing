@@ -2,7 +2,7 @@ const express = require('express');
 const axios = require('axios');
 const os = require('os');
 const app = express();
-const port = 3001;
+const port = 5002;
 const host = '0.0.0.0';
 
 // Middleware to parse JSON bodies
@@ -22,9 +22,9 @@ function getPrivateIP() {
 }
 
 const servers = [
-    { name: 'Server 1', url: 'http://server1:3000' },
-    { name: 'Server 2', url: 'http://server2:3000' },
-    { name: 'Server 3', url: 'http://server3:3000' }
+    { name: 'Server 1', url: 'http://172.17.0.2:3000/' },
+    { name: 'Server 2', url: 'http://172.17.0.3:3000/' },
+    { name: 'Server 3', url: 'http://172.17.0.4:3000/' }
 ];
 
 // Round-robin counter

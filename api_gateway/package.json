@@ -1,0 +1,16 @@
+{
+  "name": "load-balancing-api-gateway",
+  "version": "1.0.0",
+  "description": "API Gateway with round-robin load balancing",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "axios": "^1.12.2"
+  }
+}
